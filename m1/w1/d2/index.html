@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+        #table{
+            border: 1px solid black;
+        }
+    </style>
+    
+    <table id="table">
+        <thead>
+            <tr>
+                <td>Nome</td>
+                <td>Cognome</td>
+                <td>Anni</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Pietro</td>
+                <td>Rivoli</td>
+                <td>33</td>
+            </tr>
+            <tr>
+                <td>Riccardo</td>
+                <td>Calvi</td>
+                <td>21</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td colspan="2">Totale utenti</td> <!-- colspan fa allungare una riga occupandone un tot -->
+            <td>2</td>
+        </tfoot>
+    </table>
+
+    <hr>
+    <hr> <!-- DA NON FARE IN FUTURO -->
+    <hr>
+    
+    <table id="table">
+        <tr>
+            <td>1</td>
+            <td rowspan="2">2 - 5</td> <!-- colspan, ma in colonna -->
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            
+            <td colspan="2">8 - 9</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <form method="post" action="mail.php"> <!-- se non si mette niente usa "get" che porta i dati nell'url -->
+                                           <!-- action fa caricare un altro file, se non si usa li invia alla pagina stessa -->
+        <input required name="nome" placeholder="Nome" type="text">
+        <input name="password" placeholder="Password" type="password">
+        <input name="email" placeholder="Mail" type="mail">
+        <input name="numero" placeholder="Numero" type="number">
+        
+        <hr>
+        
+        <input id="consenso" type="checkbox">
+        <label for="consenso"> <!-- for cerca id -->
+            Acconsento al trattamento dei dati
+        </label>
+    
+        <hr>
+        
+        <input id="m" type="radio" name="=gender" value="m">
+        <label for="m">Maschio</label>
+        <input id="f" type="radio" name="=gender" value="f"> <!-- sono collegati dal name -->
+        <label for="f">Femmina</label>
+        <input id="x" type="radio" name="=gender" value="x" checked>
+        <label for="x">Altro</label>
+        
+        
+        <hr>
+
+        <select name="città">
+            <option value="">--</option>
+            <option value="1" selected>Milano</option> <!--1, 2, 3 servono al back-end -->
+            <option value="2">Roma</option>
+            <option value="3">Napoli</option>
+        </select>
+
+        <hr>
+
+        <textarea name="messaggio" cols="30" rows="10"></textarea> <!-- ampiezza -->
+
+        <button>Invia</button> <!-- ha di default type="submit" -->
+
+    </form>
+
+</body>
+</html>
