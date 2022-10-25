@@ -1,0 +1,16 @@
+#news{
+    border: 1px solid rgb(0, 0, 0)
+}
+
+#image{
+    width: 200px;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,0,0,1) 0%, rgba(0,0,0,1) 100%);
+}
+
+#table-td{
+    border: 1px solid #000
+}
+
+#table-tr{
+    border: 1px solid #000
+}
