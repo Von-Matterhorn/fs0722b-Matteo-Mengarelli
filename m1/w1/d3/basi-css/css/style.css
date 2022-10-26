@@ -1,0 +1,23 @@
+/* commento in css */
+
+/* Anatomia di un blocco css 
+    selettore{
+        proprietà/regole: valore;
+    }
+*/
+
+div{
+    color: red;
+}
+
+.ciao{
+    color: blue;
+}
+
+.nano{
+    border-bottom: 1px solid #000;
+}
+
+#bu{
+    background-color: green;
+}
