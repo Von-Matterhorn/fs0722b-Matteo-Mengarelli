@@ -1,4 +1,7 @@
 /* Your styles here */
+
+
+/* Inizio tag generici */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap');
 body{
     text-align: center;
@@ -8,6 +11,10 @@ body{
     letter-spacing: 1.65;
     line-height: 1.65;
 }
+/* Fine tag generici */
+
+
+/* Tag header */
 header{
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(236,139,255,1) 0%, rgba(0,212,255,1) 100%);    padding: 2rem;
 }
@@ -17,6 +24,10 @@ header{
     object-fit: cover;
     object-position: center;
 }
+/* Fine tag header. Comprende il logo */
+
+
+/* Inizio tag main */
 #banner{
     background-image: url(../images/banner.jpg);
     padding: 2.5rem;
@@ -44,6 +55,8 @@ header{
     padding: 1rem;
     text-decoration: none;
 }
+/* Fine tag banner. Comprende fino a "pulsante" partiamo */
+
 #presentazione{
     padding: 3.2rem 2rem;
 }
@@ -61,6 +74,8 @@ header{
     border-radius: 50%;
      padding-bottom: 2rem;
 }
+/* Fine tag presentazione. Comprende fino all'inizio inserto arancione */
+
 #garanzie{
     background-color: #e22d0e;
     color: white;
@@ -76,6 +91,10 @@ header{
     font-style: italic;
     padding: 2rem;
 }
+/* Fine tag garanzie. Comprende fino alla fine del banner arancione */
+
+
+/* Inizio tag aside */
 aside{
     margin: 2rem;
 }
@@ -97,6 +116,10 @@ article p{
     padding-bottom: 2rem;
     padding-left: 1rem;
 }
+/*Fine tag aside. Comprende i 3 blocchi */
+
+
+/* Inizio tag footer */
 footer{
     background-color: #25a2c3;
     padding: 2rem;
@@ -121,3 +144,4 @@ footer p{
     padding: 2rem;
     border-top: 1px solid white;
 }
+/* Fine pagina mobile */
