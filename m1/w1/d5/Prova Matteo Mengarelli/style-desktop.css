@@ -68,7 +68,7 @@ header{
 
 #presentazione{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     margin-top: 10rem;
     margin-bottom: 10rem;
     line-height: 1.5;
@@ -76,6 +76,7 @@ header{
 .div{
     max-width: 600px;
     text-align: left;
+    margin: 2rem;
 }
 #presentazione h3{
     color: #25a2c3;
@@ -168,7 +169,8 @@ footer a{
     padding-bottom: 2rem;
 }
 footer p{
-    padding: 2rem;
+    padding: 4rem;
     border-top: 1px solid white;
+
 }
 /* Fine pagina mobile */
