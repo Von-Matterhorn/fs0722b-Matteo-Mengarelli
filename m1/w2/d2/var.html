@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a=0;//ignora block scope
+        {
+            var b=1;
+            console.log(a,);
+        }
+        console.log(b)
+        let c=2;//soggette a block scope, questa è globale
+        {
+            let d=3;
+            console.log(c);
+        }
+        //console.log(d) non definito
+        {
+            let d=4;
+            console.log(d);
+        }
+        let f;//determina scope globale
+        {
+            f=5;
+        }
+        console.log(f);
+        var test=6;
+        {
+            let test=6;
+            console.log(let);
+        }
+
+        var t=9;
+        function prova() {
+            console.log(t);
+            var h=8;
+        }
+        console.log(h);
+
+        const NOME_COSTANTE='prova';//nome SEMPRE in maiuscolo
+        //NOME_COSTANTE='prova prova'; non puoi riassergnare valore a const come le altre
+        console.log(NOME_COSTANTE)
+        const OGGETTO={//così la puoi rinominare
+            nome: 'Mario';
+        }
+        OGGETTO.nome='Roberta';//facendo così
+        console.log(OGGETTO.nome)
+    </script>
+</body>
+</html>
