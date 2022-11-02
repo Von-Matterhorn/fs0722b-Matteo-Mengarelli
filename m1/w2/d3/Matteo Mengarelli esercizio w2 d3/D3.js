@@ -110,7 +110,7 @@ if((x > y) && (x > z) && (y > z)){
 */
 
 let p = 23;
-if(typeof p == 'number'){
+if(typeof p === 'number'){
   console.log('numero')
 }else{
   console.log('non è un numero')
