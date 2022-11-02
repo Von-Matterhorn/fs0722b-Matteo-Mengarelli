@@ -61,7 +61,7 @@ let prezzo = carrello.prodotto1 + carrello.prodotto2 + carrello.prodotto3
 if(prezzo > 50){
   console.log('SPEDIZIONE GRATUITA')
 }else{
-  console.log('Il costo totale è ',prezzo,' più 10 di spedizione')
+  console.log('Il costo totale è' + prezzo + 'più 10 di spedizione')
 }
 
 /* ESERCIZIO 6
@@ -79,7 +79,7 @@ let prezzoScontato = carrelloScontato.prodotto1 + carrelloScontato.prodotto2 + c
 if(prezzoScontato > 50){
 console.log('SPEDIZIONE GRATUITA')
 }else{
-console.log('Il costo totale è ',prezzoScontato,' più 10 di spedizione')
+console.log('Il costo totale è' + prezzoScontato + 'più 10 di spedizione')
 }
 
 /* ESERCIZIO 7
