@@ -5,11 +5,11 @@
 let a = 11;
 let b = 5;
 if(a > b){
-  console.log(a,'>',b)
+  console.log(a + ' > ' + b)
 }else if(b > a){
-  console.log(b,'','>','',a)
+  console.log(b + ' > ' + a)
 }else{
-  console.log(a,'','e','',b,' sono uguali')
+  console.log(a + ' e ' + b + ' sono uguali')
 }
 
 /* ESERCIZIO 2
@@ -92,17 +92,17 @@ let x = 10;
 let y = 19;
 let z = 25;
 if((x > y) && (x > z) && (y > z)){
-  console.log(x,'>',y,'>',z)
+  console.log(x + ' > ' + y + ' > ' + z)
 }else if((x > y) && (x > z) && (z > y)){
-  console.log(x,'>',z,'>',y)
+  console.log(x + ' > ' + z + ' > ' + y)
 }else if((y > x) && (y > z) && (x > z)){
-  console.log(y,'>',x,'>',z)
+  console.log(y + ' > ' + x + ' > ' + z)
 }else if((y > x) && (y > z) && (z > x)){
-  console.log(y,">",z,'>',x)
+  console.log(y + '> ' + z + ' > ' + x)
 }else if((z > x) && (z > y) && (x > y)){
-  console.log(z,'>',x,'>',y)
+  console.log(z + '> ' + x + ' > ',y)
 }else{
-  console.log(z,'>',y,'>',x)
+  console.log(z + ' > ' + y + ' > ' + x)
 }
 
 /* ESERCIZIO 8
