@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+
+body{
+    background-image: url(assets/squared-paper-sheet-notebook-background-vector-school_603291-705.webp);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    font-size: 5rem;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.testo{
+    display: flex;
+    justify-content: center;
+    margin: 3rem;
+}
+
+#numeri{
+    font-size: 400%;
+    border: 2px solid red;
+    border-radius: 20px;
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    max-width: 35%;
+}
+
+.primariga{
+    display: flex;
+    justify-content: center;
+}
+
+.secondariga{
+    display: flex;
+    justify-content: center;
+}
+
+.terzariga{
+    display: flex;
+    justify-content: center;
+}
+
+.quartariga{
+    display: flex;
+    justify-content: center;
+}
+
+.fondo{
+    display: flex;
+    justify-content: center;
+}
+
+.input{
+    width: 5%;
+    height: auto;
+    font-size: 400%;
+    margin: 20px;
+    border: 2px solid red;
+    font-family: 'Orbitron', sans-serif;
+}
+
+#uguale{
+    width: 35%;
+    font-size: 400%;
+    border: 2px solid red;
+    font-family: 'Orbitron', sans-serif;
+}

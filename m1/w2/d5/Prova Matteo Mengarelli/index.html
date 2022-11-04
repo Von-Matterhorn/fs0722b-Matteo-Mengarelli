@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calcolatrice</title>
+</head>
+<body>
+    <header>
+        <h1>La mia Calcolatrice</h1>
+    </header>
+    <main>
+        <div class="testo">
+            <input id="numeri" type="text">
+        </div>
+        <div class="primariga">
+            <button class="input" dato="7" onclick="aggiungiCifra(this)">7</button>
+            <button class="input" dato="8" onclick="aggiungiCifra(this)">8</button>
+            <button class="input" dato="9" onclick="aggiungiCifra(this)">9</button>
+            <button class="input" dato="/" onclick="aggiungiCifra(this)">/</button>
+            <button class="input" dato="(" onclick="paraperta(this)">(</button>
+        </div>
+        <div class="secondariga">
+            <button class="input" dato="4" onclick="aggiungiCifra(this)">4</button>
+            <button class="input" dato="5" onclick="aggiungiCifra(this)">5</button>
+            <button class="input" dato="6" onclick="aggiungiCifra(this)">6</button>
+            <button class="input" dato="*" onclick="aggiungiCifra(this)">X</button>
+            <button class="input" dato=")" onclick="parchiusa(this)">)</button>
+        </div>
+        <div class="terzariga">
+            <button class="input" dato="1" onclick="aggiungiCifra(this)">1</button>
+            <button class="input" dato="2" onclick="aggiungiCifra(this)">2</button>
+            <button class="input" dato="3" onclick="aggiungiCifra(this)">3</button>
+            <button class="input" dato="-" onclick="aggiungiCifra(this)">-</button>
+            <button class="input" onclick="potenza()">x²</button>
+        </div>
+        <div class="quartariga">
+            <button class="input" onclick="cancella()">C</button>
+            <button class="input" dato="0" onclick="aggiungiCifra(this)">0</button>
+            <button class="input" dato="." onclick="aggiungiCifra(this)">.</button>
+            <button class="input" dato="+" onclick="aggiungiCifra(this)">+</button>
+            <button class="input" onclick="radice()">√</button>
+        </div>
+        <div class="fondo">
+            <button id="uguale" onclick="tot()">=</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
