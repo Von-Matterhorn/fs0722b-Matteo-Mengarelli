@@ -25,7 +25,7 @@ header{
     border-radius: 20px;
     text-align: center;
     font-family: 'Orbitron', sans-serif;
-    max-width: 35%;
+    max-width: 30%;
 }
 
 .primariga{
@@ -63,7 +63,7 @@ header{
 }
 
 #uguale{
-    width: 35%;
+    width: 30%;
     font-size: 400%;
     border: 2px solid red;
     font-family: 'Orbitron', sans-serif;
