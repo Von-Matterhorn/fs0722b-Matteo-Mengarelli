@@ -1,15 +1,14 @@
 var giuste = JSON.parse(window.localStorage.getItem('rights'))
 var sbagliate = JSON.parse(window.localStorage.getItem('wrongs'))
 var totaleDomande = JSON.parse(window.localStorage.getItem('total'));
-console.log(totaleDomande);
 
 let rightsPercentuale = document.querySelector('#domande-corrette #a')
 let wrongsPercentuale = document.querySelector('.domande-sbagliate #a')
 let rightsNum = document.querySelector('#domande-corrette #b')
 let wrongsNum = document.querySelector('.domande-sbagliate #b')
 
-var percentualeCorretta = (giuste/totaleDomande)*100;
-var percentualeSbagliata = (sbagliate/totaleDomande)*100;
+var percentualeCorretta = ((giuste/totaleDomande)*100).toFixed(1);
+var percentualeSbagliata = ((sbagliate/totaleDomande)*100).toFixed(1);
 
 rightsPercentuale.textContent = percentualeCorretta + '%'
 wrongsPercentuale.textContent = percentualeSbagliata + '%'

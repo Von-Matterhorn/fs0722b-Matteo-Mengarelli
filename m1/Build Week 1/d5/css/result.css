@@ -4,6 +4,11 @@ body, html{
   
     font-family: 'Inter', sans-serif;
     font-weight: 400;
+    color: rgba(255, 255, 255, 0.920);
+}
+
+#tornaWelcome{
+    text-decoration: none;
 }
 
 h1{
@@ -36,26 +41,9 @@ p{
     z-index: 1;
 }
 
-/* .container{
-    display: grid;
-    grid-template-columns:auto auto auto;
-    max-width: auto;
-    margin-top: 150px;
-    text-align: center;
-    margin-bottom: 100px;
-} */
 a{
     text-decoration: none;
-    color: white;
-}
-.button{
-width: 150px;
-border: 1px solid white;
-text-align: center; 
-padding-top: 10px;
-padding-bottom: 10px;
-margin: auto;
-width: 180px;
+    color: rgba(255, 255, 255, 0.920);
 }
 
 h3{
@@ -66,8 +54,6 @@ h3{
 .contenitore-grafico{
     height: 350px;
     width: 350px;
-   /* right: 40vw;
-    left: 40vw;*/
     margin: 0 auto;
 }
 #contenitore-esito{
@@ -99,7 +85,6 @@ width: 200px;
 text-align: center;
 }
 
-
 #domande-corrette #a{
     font-weight: 700;
     font-size:50px;
@@ -116,23 +101,31 @@ text-align: center;
 footer{
     margin-top: 5vh;
 }
-.button{
+
+.button {
+    text-align: center;
+}
+
+.button a{
+    text-align: center; 
+    margin: auto;
+    width: 180px;
     background-color: transparent;
     border: 2px solid white;
     box-shadow: 0 0 3px #00FFFF;
-    padding: 14px 20px;
-}
-.button a{
+    padding: 20px 80px;
     font-weight: 700;
     font-size: 20px;
 }
 #domande-corrette{
     margin-top: 50px;
     text-align: left;
+    color: white;
 }
 .domande-sbagliate{
     margin-top: 50px;
     text-align: right;
+    color: rgba(255, 255, 255, 0.820);
 }
 
 
