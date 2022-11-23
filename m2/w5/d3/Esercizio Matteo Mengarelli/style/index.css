@@ -1,0 +1,21 @@
+h1{
+    color: #723811;
+    font-size: 7vw;
+}
+h2{
+    color: #723811;
+    font-size: 5vw;  
+}
+section{
+    display: flex;
+}
+@media screen and (max-width: 768px){
+    nav{
+        width: 100vw;
+        border-radius: 0;
+    }
+    section{
+        justify-content: space-between;
+        margin-bottom: 3vh;
+    }
+}
