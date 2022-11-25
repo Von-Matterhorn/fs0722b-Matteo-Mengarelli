@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Spectral&display=swap');
+body{
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+nav{
+    background-color: #ffc017;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5vh;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    border-bottom: 2px solid #191919;
+    position: sticky;
+}
+nav img{
+    width: 10vw;
+}
+.bottone{
+    border: none;
+    background-color: transparent;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8vw;
+    padding: 0.5vw 1vw;
+}
+#bottone4{
+    background-color: #191919;
+    color: white;
+    border-radius: 50px;
+}
+.section{
+    padding: 1.5vh;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+#titolo{
+    background-color: #ffc017;
+    padding: 1.5vh;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    border-bottom: 2px solid #191919;
+}
+h1{
+    font-family: 'Spectral', serif;
+    font-size: 5vw;
+    margin-top: 5vh;
+    margin-bottom: 2vh;
+}
+h2{
+    font-size: 2vw;
+    margin-bottom: 3vh;
+}
+#start{
+    background-color: #191919;
+    color: white;
+    border-radius: 50px;
+    font-size: 0.8vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    margin-bottom: 4vh;
+}
+#trending{
+    margin-top: 2vh;
+    padding-bottom: 3vh;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.151);
+}
+#container1{
+    display: flex;
+    align-items: center;
+}
+#container1 h3{
+    padding-left: 0.4vw;
+    font-size: 0.8vw;
+    font-weight: 700;
+}
+.container2{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 1.5vh;
+}
+.container2 > div{
+    display: flex;
+    align-items: flex-start;
+    width: 25vw;
+    margin-bottom: 2vh;
+}
+#in{
+    font-size: 0.8vw;
+    color: black;
+    padding: 0;
+}
+.container2 div span{
+    font-weight: 700;
+    font-size: 2vw;
+    padding-right: 1vw;
+    color: grey;
+    opacity: 0.3;
+}
+#in1, #in2, #in3, #in4, #in5{
+    font-weight: 400;
+    font-size: 0.8vw;
+    color: black;
+    padding: 0;
+    opacity: 1;
+}
+.container2 div div{
+    padding-top: 0.3vh;
+    width: 15vw;
+}
+.container2 div div p{
+    color: grey;
+    font-size: 0.8vw;
+}
+.container2 div div div{
+    display: flex;
+    align-items: center;
+}
+.container2 div div div img{
+    border-radius: 50%;
+    width: 1.5vw;
+}
+#star1, #star2, #star3{
+    width: 1.2vw;
+}
+.container2 div div div p{
+    padding-left: 0.5vw;
+    font-size: 0.8vw;
+    font-weight: 700;
+    color: black;
+}
+h4{
+    font-size: 1vw;
+    font-weight: 700;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    word-wrap: break-word;
+    width: auto;
+}
+#data1, #data2, #data3{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+#dimensione1, #dimensione2, #dimensione3{
+    color:grey;
+    padding: 0;
+    font-weight: 400;
+    font-size: 0.8vw;
+    width: 7vw;
+}
+aside{
+    padding-left: 10vw;
+    padding-right: 10vw;
+    margin-top: 5vh;
+    display: flex;
+    justify-content: space-between;
+}
+article div div{
+    display: flex;
+    align-items: center;
+    margin-top: 1vh;
+}
+article div div img{
+    border-radius: 50%;
+    width: 1.5vw;
+}
+.autore{
+    font-weight: 700;
+    padding-left: 0.5vw;
+    color: black;
+}
+article div{
+    width: 25vw;
+}
+aside h3{
+    font-weight: 700;
+    font-size: 1.1vw;
+    margin: 1vh 0;
+}
+aside p{
+    font-size: 0.8vw;
+    color: grey;
+    word-wrap: break-word;
+    width: auto;
+}
+.mark{
+    margin-left: auto;
+    width: 1.2vw;
+}
+article{
+    display: flex;
+    margin-bottom: 5vh;
+}
+article img{
+    width: 12vw;
+}
+.foto{
+    margin-left: 2vw;
+}
+article span{
+    padding: 0.2vw 0.5vw;
+    background-color: rgba(128, 128, 128, 0.205);
+    border-radius: 50px;
+}
+#footer-like{
+    margin-right: 10vw;
+    width: 25vw;
+}
+aside h4{
+    font-weight: 700;
+    margin-bottom: 2vh;
+}
+aside button{
+    background-color: transparent;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8vw;
+    padding: 0.5vw 0.8vw;
+    margin-bottom: 1vh;
+    margin-right: 1vw;
+    border: 1px solid rgba(128, 128, 128, 0.555);
+    color: rgba(128, 128, 128, 0.699);
+}
+#interessi{
+    padding-bottom: 2vh;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.37);
+}
+#footer-like a{
+    font-size: 0.8vw;
+    padding-right: 1.5vh;
+    line-height: 3vh;
+    color: rgba(128, 128, 128, 0.699);
+    text-decoration: none;
+}
+#link{
+    margin-top: 1vh;
+}
+.star{
+    width: 1.2vw
+}
+@media screen and (max-width: 1199px){
+    nav{
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+    nav img{
+        width: 15vw
+    }
+    .bottone{
+        font-size: 1.5vw;
+    }
+    .section{
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+    #titolo{
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+    h1{
+        font-size: 8vw;
+    }
+    h2{
+        font-size: 2.5vw
+    }
+    #start{
+        font-size: 1.5vw;
+    }
+    #container1 h3{
+        font-size: 1.5vw;
+    }
+    #trending{
+        padding-bottom: 1.5vh;
+    }
+    .container2 > div{
+        width: 45vw;
+    }
+    .container2 div span{
+        font-size: 3vw;
+    }
+    .container2 div div{
+        padding: 0.1vw;
+        width: 40vw;
+    }
+    .container2 div div div img{
+        width: 2.3vw
+    }
+    .container2 div div div p{
+        font-size: 1.5vw;
+        width: 30vw;
+    }
+    h4{
+        font-size: 1.5vw;
+        width: 35vw;
+    }
+    .container2 div div p{
+        font-size: 1.2vw;
+    }
+    #dimensione1, #dimensione2, #dimensione3{
+        font-size: 1.2vw;
+        width: 11vw;
+    }
+    aside{
+        flex-direction: column;
+        justify-content: left;
+        margin: 3vh;
+        padding: 0;
+    }
+    #footer-like{
+        order: -1;
+        width: 90vw;
+        padding:0
+    }
+    #footer-like a{
+        font-size: 1.2vw;
+    }
+    aside button{
+        font-size: 1.2vw;
+    }
+    aside div div img{
+        width: 2.3vw;
+    }aside p{
+        font-size: 1.2vw;
+    }
+    aside h3{
+        font-size: 1.8vw;
+    }
+    article div{
+        width: 75vw
+    }
+}
+@media screen and (max-width: 767px){
+    nav{
+        padding:2vw;
+    }
+    nav img{
+        width: 25vw
+    }
+    .bottone{
+        font-size: 2vw
+    }
+    #titolo{
+        padding-left: 2vw;
+        padding-right: 2vw;
+    }
+    h1{
+        font-size: 12vw
+    }
+    h2{
+        font-size: 4vw;
+    }
+    #start{
+        font-size: 2vw;
+    }
+    #container1 h3{
+        font-size: 2.5vw;
+    }
+    .container2 > div{
+        width: 90vw;
+    }
+    .container2 div span{
+        font-size: 4vw
+    }
+    .container2 div div{
+        padding: 0.1vw;
+        width: 90vw;
+    }
+    .container2 div div div img{
+        width: 3vw
+    }
+    .container2 div div div p{
+        font-size: 2.5vw;
+        width: 90vw;
+    }
+    h4{
+        font-size: 3vw;
+        width: 90vw;
+    }
+    .container2 div div p{
+        font-size: 2vw;
+    }
+    #dimensione1, #dimensione2, #dimensione3{
+        font-size: 2vw;
+        width: 18vw;
+    }
+}
