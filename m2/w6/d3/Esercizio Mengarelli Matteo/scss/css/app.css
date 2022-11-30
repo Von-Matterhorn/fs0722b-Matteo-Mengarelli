@@ -1,0 +1,65 @@
+#bottoni button:nth-child(1) {
+  color: white;
+  background: #f08d37;
+  border: none;
+  border-radius: 5px;
+  padding: 1vh 2vw;
+  font-size: 1vw;
+}
+
+#bottoni button:nth-child(2) {
+  color: white;
+  background: #3269f7;
+  border: none;
+  border-radius: 5px;
+  padding: 1vh 2vw;
+  font-size: 1vw;
+}
+
+body {
+  background: #5b17bd;
+  margin: 5vh 10vw;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+nav div {
+  display: flex;
+  align-items: center;
+  font-size: 1vw;
+  font-weight: 700;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  color: white;
+}
+nav ul li {
+  font-size: 1vw;
+  margin: 0 1vw;
+}
+
+#container {
+  display: flex;
+  align-items: center;
+  margin-top: 5vh;
+}
+#container #scritte {
+  display: flex;
+  flex-direction: column;
+}
+#container #scritte h1 {
+  font-size: 3.5vw;
+  margin-bottom: 0;
+}
+#container #scritte p {
+  font-size: 1vw;
+}
+#container img {
+  width: 40%;
+  border-radius: 25%;
+  margin-left: 2vw;
+}/*# sourceMappingURL=app.css.map */

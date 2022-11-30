@@ -1,0 +1,16 @@
+#bottoni button:nth-child(1){
+    color: $colore;
+    background: $colorebottone1;
+    border: none;
+    border-radius: 5px;
+    padding: $padding;
+    font-size: $dimensionefont;
+}
+#bottoni button:nth-child(2){
+    color: $colore;
+    background: $colorebottone2;
+    border: none;
+    border-radius: 5px;
+    padding: $padding;
+    font-size: $dimensionefont;
+}

@@ -1,0 +1,47 @@
+@import 'variables';
+@import 'buttons';
+body{
+    background: $coloresfondo;
+    margin: $margini;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    div{
+        display: flex;
+        align-items: center;
+        font-size: $dimensionefont;
+        font-weight: $pesofont;
+    }
+    ul{
+        display: flex;
+        align-items: center;
+        list-style: none;
+        color: $colore;
+        li{
+            font-size: $dimensionefont;
+            margin: $marginilista;
+        }
+    }
+}
+#container{
+    display: flex;
+    align-items: center;
+    margin-top: 5vh;
+    #scritte{
+        display: flex;
+        flex-direction: column;
+        h1{
+            font-size: 3.5vw;
+            margin-bottom: 0;
+        }
+        p{
+            font-size: 1vw;
+        }
+    }
+    img{
+        width: 40%;
+        border-radius: 25%;
+        margin-left: 2vw;
+    }
+}
