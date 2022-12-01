@@ -1,0 +1,21 @@
+@import 'variables';
+@mixin lista{
+    list-style-type: $deco;
+    font-size: $size;
+}
+
+main{
+    div{
+        p{
+            margin-bottom: 2vw;
+        }
+        ul{
+            li{
+                @include lista;
+                padding-left: 2vw;
+                padding-bottom: 2vw;
+    
+            }
+        }
+    }
+}

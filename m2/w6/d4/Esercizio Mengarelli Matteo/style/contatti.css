@@ -1,0 +1,23 @@
+h3 {
+  font-size: 1.5vw;
+  background-color: white;
+  width: 6.2vw;
+  position: relative;
+  top: 4.5vh;
+  left: 2vw;
+  margin-top: -3vh;
+  z-index: 1;
+}
+
+form {
+  border: 1px solid black;
+  padding: 1vw;
+}
+form div input {
+  width: 10vw;
+  height: 1.5vh;
+}
+form div textarea {
+  height: 4vh;
+  width: 15vw;
+}/*# sourceMappingURL=contatti.css.map */

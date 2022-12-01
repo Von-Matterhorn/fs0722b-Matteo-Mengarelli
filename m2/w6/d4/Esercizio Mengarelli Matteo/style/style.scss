@@ -1,0 +1,61 @@
+@import 'variables';
+@mixin lista{
+    list-style-type: $deco;
+    font-size: $size;
+}
+
+header{
+    background-color: #170a48;
+    border-radius: 10px;
+    ul{
+        display: flex;
+        li{
+            @include lista;
+            margin: 2vh 2vw;
+            font-style: italic;
+            a{
+                text-decoration: $deco;
+                color: $colorelink;
+            }
+        }
+    }
+}
+main{
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+    div{
+        width: 50vw;
+        h1{
+            font-size: $sizeh1;
+            margin-top: 0;
+        }
+        h2{
+            font-size: $sizeh2;
+        }
+        p{
+            font-size: $size;
+        }
+        button{
+            font-size: $size;
+            background-color: #ffa500;
+            color: $colorelink;
+            border: 0.2vw solid black;
+            padding: 0.5vw;
+        }
+    }
+    aside{
+        li{
+            @include lista;
+            width: 10vw;
+            padding: 1vw;
+            margin-left: 3vw;
+            border-bottom: 2px dashed grey;
+        }
+    }
+}
+footer{
+    height: 10vh;
+    background-color: #6285f9;
+}
+

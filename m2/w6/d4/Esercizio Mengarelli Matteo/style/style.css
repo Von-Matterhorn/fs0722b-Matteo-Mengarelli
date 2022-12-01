@@ -1,0 +1,56 @@
+header {
+  background-color: #170a48;
+  border-radius: 10px;
+}
+header ul {
+  display: flex;
+}
+header ul li {
+  list-style-type: none;
+  font-size: 1vw;
+  margin: 2vh 2vw;
+  font-style: italic;
+}
+header ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  margin-top: 5vh;
+}
+main div {
+  width: 50vw;
+}
+main div h1 {
+  font-size: 3vw;
+  margin-top: 0;
+}
+main div h2 {
+  font-size: 2vw;
+}
+main div p {
+  font-size: 1vw;
+}
+main div button {
+  font-size: 1vw;
+  background-color: #ffa500;
+  color: white;
+  border: 0.2vw solid black;
+  padding: 0.5vw;
+}
+main aside li {
+  list-style-type: none;
+  font-size: 1vw;
+  width: 10vw;
+  padding: 1vw;
+  margin-left: 3vw;
+  border-bottom: 2px dashed grey;
+}
+
+footer {
+  height: 10vh;
+  background-color: #6285f9;
+}/*# sourceMappingURL=style.css.map */
