@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+header {
+  padding: 0 5vw;
+  background-color: #7e36f4;
+}
+header .bianco {
+  color: white;
+}
+header .red {
+  color: red;
+}
+
+body p {
+  font-size: 1vw;
+}
+@media screen and (max-width: 992px) {
+  body p {
+    font-size: 2vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  body p {
+    font-size: 3vw;
+  }
+}
+body h2 {
+  font-size: 3vw;
+}
+@media screen and (max-width: 992px) {
+  body h2 {
+    font-size: 4vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  body h2 {
+    font-size: 6vw;
+  }
+}
+body .container-fluid {
+  padding: 0;
+}
+
+section .testa {
+  height: 30vw;
+  background-image: url("../img/pexels-aleksandar-pasaric-325185.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 25% 50%;
+}
+@media screen and (max-width: 992px) {
+  section .testa {
+    height: 45vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  section .testa {
+    height: 60vw;
+  }
+}
+section .testa h1 {
+  font-size: 4vw;
+  margin: 0 5vw;
+  padding-top: 2vw;
+}
+@media screen and (max-width: 992px) {
+  section .testa h1 {
+    font-size: 5vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  section .testa h1 {
+    font-size: 7vw;
+  }
+}
+section .testa p {
+  margin: 0.5vw 5vw;
+}
+section .testa .btn {
+  margin: 0.5vw 5vw;
+  font-size: 1vw;
+  color: white;
+  background-color: #7e36f4;
+}
+@media screen and (max-width: 992px) {
+  section .testa .btn {
+    font-size: 2vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  section .testa .btn {
+    font-size: 3vw;
+  }
+}
+section .icone {
+  padding-top: 3vw;
+  background-color: #f5f5f5;
+  font-size: 2vw;
+}
+@media screen and (max-width: 992px) {
+  section .icone {
+    font-size: 4vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  section .icone {
+    font-size: 6vw;
+  }
+}
+section .partner {
+  text-align: center;
+}
+section .partner h2 {
+  margin-bottom: 2vw;
+}
+section .partner img {
+  max-width: 10vw;
+}
+@media screen and (max-width: 992px) {
+  section .partner img {
+    max-width: 20vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  section .partner img {
+    max-width: 30vw;
+  }
+}
+
+aside {
+  text-align: center;
+}
+aside h2 {
+  margin-bottom: 4vw;
+}
+aside .carousel-indicators {
+  margin-bottom: 2vw;
+}
+aside .carousel-item {
+  text-align: center;
+}
+aside .carousel-item p {
+  margin: auto;
+  margin-bottom: 2vw;
+  width: 35vw;
+}
+@media screen and (max-width: 992px) {
+  aside .carousel-item p {
+    width: 60vw;
+  }
+}
+aside .carousel-item img {
+  margin: auto;
+  margin-bottom: 2vw;
+  max-width: 5vw;
+}
+@media screen and (max-width: 992px) {
+  aside .carousel-item img {
+    max-width: 10vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  aside .carousel-item img {
+    max-width: 15vw;
+  }
+}
+aside .carousel-item .name {
+  margin-bottom: 5vw;
+  font-weight: 700;
+}
+
+footer {
+  background-color: #7e36f4;
+  color: white;
+  padding: 2vw 5vw;
+  font-size: 0.8vw;
+}
+@media screen and (max-width: 992px) {
+  footer {
+    font-size: 1.5vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  footer {
+    font-size: 2.9vw;
+  }
+}
+footer .shift {
+  font-size: 1vw;
+  font-weight: 700;
+}
+@media screen and (max-width: 992px) {
+  footer .shift {
+    font-size: 2vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  footer .shift {
+    font-size: 4vw;
+  }
+}
+footer .row {
+  text-align: center;
+  margin-bottom: 2vw;
+}
+footer p {
+  text-align: center;
+  font-size: 0.8vw;
+}
+@media screen and (max-width: 992px) {
+  footer p {
+    font-size: 1.5vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  footer p {
+    font-size: 2.9vw;
+  }
+}
+
+body {
+  background-color: rgb(195, 209, 0);
+  color: #000000;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}/*# sourceMappingURL=style.css.map */

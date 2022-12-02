@@ -1,0 +1,11 @@
+@import 'variables';
+header{
+    padding: 0 $m-p;
+    background-color: $background;
+    .bianco{
+        color: $txtwhite;
+    }
+    .red{
+        color: red
+    }
+}
