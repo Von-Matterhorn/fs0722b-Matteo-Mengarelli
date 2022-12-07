@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div id="tabella">
+    <input id="put" type="text" placeholder="aggiungi qui"><button id="btn">Aggiungi</button>
+    <div id="lista"></div>
+    </div>
+
+    <script>
+        document.querySelector('#btn').addEventListener('click', () => {
+
+        let li = document.createElement('li')
+        li.classList.add('newLi')
+
+        let tGet = document.querySelector('#put')
+        let text = tGet.value
+        let doneText = text.substring(0,1).toUpperCase() + text.substring(1,text.length)
+
+        let del = document.createElement('img')
+        del.src = 'img/delete.svg'
+        del.classList.add('img')
+
+        li.append(doneText, del)
+        document.querySelector('#lista').append(li)
+
+        tGet.value = ''
+
+        li.addEventListener('click', () => {
+        li.classList.add('doneLi')
+        })
+
+        del.addEventListener('click', () => {
+        document.querySelector('#lista').removeChild(li)
+        })
+
+        })
+    </script>
+</body>
+</html>
