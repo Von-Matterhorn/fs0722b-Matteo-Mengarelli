@@ -1,0 +1,26 @@
+<h1>Post attivi</h1>
+<div class="container">
+  <app-card-post [post]="articolo" *ngFor="let articolo of posts">
+     <button class="btn btn-primary me-2" (click)="change(articolo.id)" (click)="ngOnInit()">disattiva</button>
+  </app-card-post>
+
+
+  </div>
+<!-- <div class="card" style="width: 18rem;" *ngFor="let p of posts">
+    <div class="card-body">
+        <h5 class="card-title">{{p.id}} - {{p.title}}</h5>
+        <p class="card-text">{{p.body}}</p>
+    </div>
+
+</div> -->
+<!-- <div class="card" style="width: 18rem;" *ngFor="let p of posts">
+  <div class="card-body">
+      <h5 class="card-title">{{p.id}} - {{p.title}}</h5>
+      <p class="card-text">{{p.body}}</p>
+      <button (click)="change(p.id-1)" (click)="ngOnInit()">disattiva</button>
+  </div>
+</div> -->
+
+<!-- <app-card-post *ngFor="let p of posts">
+<button (click)="change(p.id-1)"></button>
+</app-card-post> -->

@@ -107,5 +107,8 @@
       }
     }
   },
-  "defaultProject": "d2"
+  "defaultProject": "d2",
+  "cli": {
+    "analytics": false
+  }
 }
