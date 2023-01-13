@@ -1,0 +1,22 @@
+<div *ngIf="!control" class="mt-5 text-center task">Task recovery...</div>
+<div *ngIf="control && list.length == 0" class="mt-5 text-center task">No task found</div>
+
+<div *ngIf="control && list.length > 0">
+  <div class="container mt-3 text-center task" *ngFor="let todo of list">
+    {{ todo.title }}
+    <div class="btn" (click)="aggiorna(todo.id)"><i class="bi bi-check-lg green task"></i></div>
+    <div class="btn" (click)="elimina(todo.id)"><i class="bi bi-x-lg red task"></i></div>
+  </div>
+</div>
+<input
+  type="text"
+  placeholder="write new task"
+  class="form-control ms-5 mt-3 testo text-center task"
+  [(ngModel)]="newTask"
+/>
+<div class="text-center">
+  <button type="button" class="btn btn-primary mt-3 task" (click)="aggiungi()">
+    ADD NEW TASK
+  </button>
+</div>
+
