@@ -26,10 +26,6 @@ public class Dipendente {
 		this.importoOrarioStraordinario = importoOrarioStraordinario;
 		this.liv = liv;
 		this.dip = dip;
-
-		// controllo stipendio
-		// ad ogni livello inserito controllo se la cifra è superiore allo stipendio
-		// minimo e inferiore allo stipendio massimo, in caso contrario setto al minimo
 		if (this.liv == Livello.OPERAIO) {
 			if (stipendio < 1000 || stipendio >= 1200) {
 				this.stipendio = 1000;

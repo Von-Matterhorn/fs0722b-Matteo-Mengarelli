@@ -3,27 +3,27 @@ package esercizio4_epicode;
 public class GestioneDipendenti {
 
 	public static void main(String[] args) {
-		Dipendente damiano = new Dipendente(666, Dipartimento.PRODUZIONE);
-		Dipendente riccardo = new Dipendente(667, Dipartimento.PRODUZIONE);
-		Dipendente francesco = new Dipendente(668, 1200, 30, Livello.IMPIEGATO, Dipartimento.AMMINISTRAZIONE);
-		Dipendente stefano = new Dipendente(669, 2000, 30, Livello.DIRIGENTE, Dipartimento.VENDITE);
+		Dipendente Matteo = new Dipendente(46, Dipartimento.PRODUZIONE);
+		Dipendente Aldo = new Dipendente(484, Dipartimento.PRODUZIONE);
+		Dipendente Giovanni = new Dipendente(687, 1200, 30, Livello.IMPIEGATO, Dipartimento.AMMINISTRAZIONE);
+		Dipendente Giacomo = new Dipendente(945, 2000, 30, Livello.DIRIGENTE, Dipartimento.VENDITE);
 
-		riccardo.promuovi();
-		francesco.promuovi();
+		Matteo.promuovi();
+		Giovanni.promuovi();
 
-		damiano.stampaDatiDipendente();
+		Matteo.stampaDatiDipendente();
 		System.out.println("");
-		riccardo.stampaDatiDipendente();
+		Aldo.stampaDatiDipendente();
 		System.out.println("");
-		francesco.stampaDatiDipendente();
+		Giovanni.stampaDatiDipendente();
 		System.out.println("");
-		stefano.stampaDatiDipendente();
+		Giacomo.stampaDatiDipendente();
 		System.out.println("");
 
-		System.out.println(calcolaPaga(damiano, 5));
-		System.out.println(calcolaPaga(riccardo, 5));
-		System.out.println(calcolaPaga(francesco, 5));
-		System.out.println(calcolaPaga(stefano, 5));
+		System.out.println(calcolaPaga(Matteo, 5));
+		System.out.println(calcolaPaga(Aldo, 5));
+		System.out.println(calcolaPaga(Giovanni, 5));
+		System.out.println(calcolaPaga(Giacomo, 5));
 	}
 
 	public static double calcolaPaga(Dipendente dipendente) {
