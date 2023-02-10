@@ -179,19 +179,19 @@ public class Main {
 			if (list.get(i) instanceof Libro) {
 				Libro currentBook = (Libro) list.get(i);
 				string += "libro";
-				string += "#";
-				string += currentBook.getAuthor();
-				string += "#";
-				string += currentBook.getGenre();
-				string += "#";
-				string += Long.toString(list.get(i).getIsbn());
-				string += "#";
+				string += " ";
 				string += list.get(i).getTitle();
-				string += "#";
+				string += ", ";
+				string += currentBook.getAuthor();
+				string += ", ";
+				string += currentBook.getGenre();
+				string += ", ";
+				string += Long.toString(list.get(i).getIsbn());
+				string += ", ";
 				string += Integer.toString(list.get(i).getYear());
-				string += "#";
+				string += ", ";
 				string += Integer.toString(list.get(i).getPages());
-				string += "#";
+				string += ", ";
 			}
 		}
 		File file = new File("archivio/elencolibri.txt");
@@ -203,7 +203,7 @@ public class Main {
 			if (list.get(i) instanceof Rivista) {
 				Rivista currentMag = (Rivista) list.get(i);
 				string += "rivista";
-				string += "#";
+				string += " ";
 				if (currentMag.getPeriod() == Period.SETTIMANALE) {
 					string += "settimanale";
 				} else if (currentMag.getPeriod() == Period.MENSILE) {
@@ -211,15 +211,15 @@ public class Main {
 				} else {
 					string += "semestrale";
 				}
-				string += "#";
-				string += Long.toString(list.get(i).getIsbn());
-				string += "#";
+				string += " ";
 				string += list.get(i).getTitle();
-				string += "#";
+				string += ", ";
+				string += Long.toString(list.get(i).getIsbn());
+				string += ", ";
 				string += Integer.toString(list.get(i).getYear());
-				string += "#";
+				string += ", ";
 				string += Integer.toString(list.get(i).getPages());
-				string += "#";
+				string += ", ";
 			}
 		}
 		File file = new File("archivio/elencoriviste.txt");
