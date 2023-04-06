@@ -1,10 +1,9 @@
-<div class="d-flex flex-row justify-content-between">
-  <div>
-    <img src="../assets/logo.png" id="logo">
+<div class="nav" *ngIf="logged == false">
+  <img src="../assets/logo.png" id="logo">
+  <div class="right">
+    <a href="_blank" class="login">Accedi o Registrati</a>
+    <input class="bar" type="text" placeholder="Cerca...">
+    <i class="bi bi-search black bar"></i>
   </div>
-  <div>
-    <span>Accedi o Registrati</span>
-  </div>
-  <input type="text" placeholder="Cerca...">
 </div>
 <router-outlet></router-outlet>

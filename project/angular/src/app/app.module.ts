@@ -7,7 +7,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './home/home.component';
 import { GameComponent } from './game/game.component';
 import { ProfileComponent } from './profile/profile.component';
-import { FilteredComponent } from './filtered/filtered.component'
+import { FilteredComponent } from './filtered/filtered.component';
 
 @NgModule({
   declarations: [
