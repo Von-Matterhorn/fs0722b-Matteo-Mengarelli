@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { ApiService } from './api.service';
+import { Component,Input, OnInit } from '@angular/core';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 @Component({
   selector: 'app-root',
@@ -10,12 +10,15 @@ export class AppComponent {
   title = 'project';
   logged: boolean = false;
   catalogo: any;
-  constructor(private api:ApiService){}
+  constructor(private http: HttpClient){}
 
   ngOnInit(){
-    this.api.getData().subscribe(res=>{
-      this.catalogo=res;
+    let headers = new HttpHeaders({});
+    this.http.get<any>('http://localhost:3000/', {
+      headers: headers
+    }).subscribe(data => {
+      this.catalogo = data;
+      console.log(this.catalogo)
     })
-    console.log(this.catalogo);
   }
 }

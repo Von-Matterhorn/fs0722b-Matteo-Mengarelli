@@ -2,8 +2,9 @@
   <img src="../assets/logo.png" id="logo">
   <div class="right">
     <a href="_blank" class="login">Accedi o Registrati</a>
-    <input class="bar" type="text" placeholder="Cerca...">
-    <i class="bi bi-search black bar"></i>
+    <input type="text" placeholder="Cerca...">
+    <i class="bi bi-search p-3"></i>
   </div>
 </div>
+<app-home [data]="catalogo"></app-home>
 <router-outlet></router-outlet>
