@@ -10,10 +10,29 @@
     align-items: center;
     padding: 1.2vh 2vw;
     border-bottom: 1.5px solid black;
+    position: sticky;
+    top: 0;
+    z-index: 10000;
+    background-color: white;
 }
 .right{
     padding: 0 2vw;
 }
 .login{
     padding-right: 5vw;
+}
+@media (max-width: 992px){
+    #logo{
+        width: 25vw;
+    }
+    .login{
+        font-size: 3vw;
+    }
+    #search{
+        width: 25vw;
+        font-size: 2vw;
+    }
+    .bi-search{
+        font-size: 2.5vw;
+    }
 }

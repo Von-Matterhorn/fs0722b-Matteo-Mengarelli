@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule, bootstrapApplication } from '@angular/platform-browser';
+import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -9,6 +9,7 @@ import { GameComponent } from './game/game.component';
 import { ProfileComponent } from './profile/profile.component';
 import { FilteredComponent } from './filtered/filtered.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    SlickCarouselModule
+    SlickCarouselModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -2,3 +2,49 @@
     font-size: 5vw;
     text-align: center;
 }
+.carousel{
+    width: 70vw;
+}
+.filters{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+.image{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50px;
+}
+.genre{
+    width: 18.75vw;
+    border-radius: 50px;
+    margin-top: 5vh;
+    text-align: center;
+}
+.choice{
+    font-size: 2vw;
+}
+#mid{
+    margin-top: 3vh;
+    text-align: center;
+    font-size: 3.5vw;
+}
+@media (max-width: 992px){
+    .genre{
+        width: 42.75vw;
+    }
+    .choice{
+        font-size: 5vw;
+    }
+    #mid{
+        font-size: 8vw;
+    }
+    #welcome{
+        font-size: 10vw;
+    }
+    .carousel{
+        width: 100vw;
+    }
+}
