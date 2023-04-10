@@ -1,5 +1,4 @@
-import { Component,Input, OnInit } from '@angular/core';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -9,16 +8,8 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 export class AppComponent {
   title = 'project';
   logged: boolean = false;
-  catalogo: any;
-  constructor(private http: HttpClient){}
+  constructor(){}
 
   ngOnInit(){
-    let headers = new HttpHeaders({});
-    this.http.get<any>('http://localhost:3000/', {
-      headers: headers
-    }).subscribe(data => {
-      this.catalogo = data;
-      console.log(this.catalogo)
-    })
   }
 }
