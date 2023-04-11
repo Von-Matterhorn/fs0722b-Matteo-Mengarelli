@@ -8,30 +8,53 @@ import { CatalogoService } from '../catalogo.service';
 })
 export class HomeComponent implements OnInit {
 
-  @Input() data: any;
-  random!: number;
+  @Input()
+  image:any = [];
+  random: any = [];
+  x!: number;
   selected!: string;
   games: any;
   constructor(public catalogo: CatalogoService){}
 
   ngOnInit(){
     this.catalogo.getdata().subscribe(res=>{
-    this.games=res;
-    console.log(this.games);
-      for (let index = 0; index < 5; index++) {
-        this.images()
-        this.random = Math.floor(Math.random() * (24 - 1 + 1) + 1);
-        for(let x = 0; x < 25; x++){
-          if(this.random == this.games[x].id){
-            console.log(this.games[x])
-          }
-        }
-      }
+      this.games=res;
+      this.buildCarousel()
     })
   }
 
-  images = function(){
-    let random = Math.floor(Math.random() * (24 - 1 + 1) + 1);
-    console.log(random);
+  buildCarousel =  () =>{
+    for (let i = 0; i < 5; i++) {
+      this.x = Math.floor(Math.random() * (24 - 1 + 1) + 1);
+      for(let a = 0; a < this.random.length; a++){
+        while(this.x == this.random[a]){
+          this.x = Math.floor(Math.random() * (24 - 1 + 1) + 1);
+        }
+      }
+      this.random[i] = this.x;
+    }
+    for(let x = 0; x < this.random.length; x++){
+      for(let y = 0; y < 24; y++){
+        if(this.random[x] == this.games[y].id){
+          this.image[x] = this.games[y].img;
+        }
+      }
+    }
+  }
+
+  getGame1 = () =>{
+    this.selected = this.image[0];
+  }
+  getGame2 = () =>{
+    this.selected = this.image[1];
+  }
+  getGame3 = () =>{
+    this.selected = this.image[2];
+  }
+  getGame4 = () =>{
+    this.selected = this.image[3];
+  }
+  getGame5 = () =>{
+    this.selected = this.image[4];
   }
 }

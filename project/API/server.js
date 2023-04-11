@@ -4,7 +4,7 @@ const PORT = 3000;
 let games = [
     {
         title: 'Persona 5',
-        img: '/assets/games/Persona 5',
+        img: '/assets/games/Persona 5.webp',
         id: '1',
         players: '1',
         genre: 'Gioco di ruolo',
@@ -18,7 +18,7 @@ let games = [
     },
     {
         title: 'Persona 4',
-        img: '/assets/games/Persona 4',
+        img: '/assets/games/Persona 4.webp',
         id: '2',
         players: '1',
         genre: 'Gioco di ruolo',
@@ -32,7 +32,7 @@ let games = [
     },
     {
         title: 'Persona 3',
-        img: '/assets/games/Persona 3',
+        img: '/assets/games/Persona 3.webp',
         id: '3',
         players: '1',
         genre: 'Gioco di ruolo',
@@ -46,7 +46,7 @@ let games = [
     },
     {
         title: 'The Last of Us Parte II',
-        img: '/assets/games/TLOU2',
+        img: '/assets/games/TLOU2.webp',
         id: '4',
         players: '1',
         genre: 'Azione, Avventura',
@@ -60,7 +60,7 @@ let games = [
     },
     {
         title: 'The Last of Us Parte I',
-        img: '/assets/games/TLOU',
+        img: '/assets/games/TLOU.webp',
         id: '5',
         players: '1',
         genre: 'Azione',
@@ -74,7 +74,7 @@ let games = [
     },
     {
         title: 'Bloodborne: Game of the Year Edition',
-        img: '/assets/games/Bloddyborny',
+        img: '/assets/games/Bloddyborny.webp',
         id: '6',
         players: '1',
         genre: 'Gioco di ruolo',
@@ -88,7 +88,7 @@ let games = [
     },
     {
         title: 'DARK SOULS: REMASTERED',
-        img: '/assets/games/DS',
+        img: '/assets/games/DS.webp',
         id: '7',
         players: '1',
         genre: 'Gioco di ruolo',
@@ -102,7 +102,7 @@ let games = [
     },
     {
         title: "Crash Bandicoot 4: It's About Time",
-        img: '/assets/games/Crash',
+        img: '/assets/games/Crash.webp',
         id: '8',
         players: '1 - 4',
         genre: 'Azione',
@@ -116,7 +116,7 @@ let games = [
     },
     {
         title: 'DARK SOULS III - Deluxe Edition',
-        img: '/assets/games/DS3',
+        img: '/assets/games/DS3.webp',
         id: '9',
         players: '1',
         genre: 'Azione, Avventura, Giochi Di Ruolo',
@@ -130,7 +130,7 @@ let games = [
     },
     {
         title: 'Horizon Forbidden West',
-        img: '/assets/games/Horizon',
+        img: '/assets/games/Horizon.webp',
         id: '10',
         players: '1',
         genre: 'Azione',
@@ -144,7 +144,7 @@ let games = [
     },
     {
         title: 'Gran Turismo 7',
-        img: '.../assets/games/GT7',
+        img: '/assets/games/GT7.webp',
         id: '11',
         players: '1 - 2',
         genre: 'Sport',
@@ -158,7 +158,7 @@ let games = [
     },
     {
         title: 'FINAL FANTASY VII REMAKE INTERGRADE',
-        img: '/assets/games/FF7',
+        img: '/assets/games/FF7.webp',
         id: '12',
         players: '1',
         genre: 'Gioco di ruolo',
@@ -172,7 +172,7 @@ let games = [
     },
     {
         title: 'FINAL FANTASY XV ROYAL EDITION',
-        img: '/assets/games/FF15',
+        img: '/assets/games/FF15.webp',
         id: '13',
         players: '1',
         genre: 'Giochi Di Ruolo, Azione, Avventura',
@@ -186,7 +186,7 @@ let games = [
     },
     {
         title: 'EA SPORTS FIFA 23 Standard Edition',
-        img: '/assets/games/Fifa',
+        img: '/assets/games/Fifa.webp',
         id: '14',
         players: '1 - 4',
         genre: 'Sport',
@@ -200,7 +200,7 @@ let games = [
     },
     {
         title: 'God of War',
-        img: '/assets/games/GOW',
+        img: '/assets/games/GOW.webp',
         id: '15',
         players: '1',
         genre: 'Azione, Avventura',
@@ -214,7 +214,7 @@ let games = [
     },
     {
         title: 'God of War Ragnarök',
-        img: '/assets/games/GOWR',
+        img: '/assets/games/GOWR.webp',
         id: '16',
         players: '1',
         genre: 'Azione',
@@ -228,7 +228,7 @@ let games = [
     },
     {
         title: 'Sekiro: Shadows Die Twice - Game of the Year Edition',
-        img: '/assets/games/Sekiro',
+        img: '/assets/games/Sekiro.webp',
         id: '17',
         players: '1',
         genre: 'Azione, Avventura',
@@ -242,7 +242,7 @@ let games = [
     },
     {
         title: 'NieR: Automata Game of the YoRHa Edition',
-        img: '/assets/games/Nier',
+        img: '/assets/games/Nier.webp',
         id: '18',
         players: '1',
         genre: 'Azione, Giochi Di Ruolo',
@@ -256,7 +256,7 @@ let games = [
     },
     {
         title: 'Metro Exodus',
-        img: '/assets/games/Metro',
+        img: '/assets/games/Metro.webp',
         id: '19',
         players: '1',
         genre: 'Azione, Avventura',
@@ -270,7 +270,7 @@ let games = [
     },
     {
         title: 'MONSTER HUNTER: WORLD',
-        img: '/assets/games/MHW',
+        img: '/assets/games/MHW.webp',
         id: '20',
         players: '1',
         genre: 'Azione',
@@ -284,7 +284,7 @@ let games = [
     },
     {
         title: 'Tales of Arise',
-        img: '/assets/games/ToA',
+        img: '/assets/games/ToA.webp',
         id: '21',
         players: '1',
         genre: 'Gioco di ruolo',
@@ -298,7 +298,7 @@ let games = [
     },
     {
         title: 'The Legend of Heroes: Trails of Cold Steel II',
-        img: '/assets/games/Trails 2',
+        img: '/assets/games/Trails 2.webp',
         id: '22',
         players: '1',
         genre: 'Gioco di ruolo',
@@ -312,7 +312,7 @@ let games = [
     },
     {
         title: 'The Legend of Heroes: Trails of Cold Steel III',
-        img: '/assets/games/Trails 3',
+        img: '/assets/games/Trails 3.webp',
         id: '23',
         players: '1',
         genre: 'Gioco di ruolo',
@@ -326,7 +326,7 @@ let games = [
     },
     {
         title: 'The Legend of Heroes: Trails of Cold Steel IV',
-        img: '/assets/games/Trails 4',
+        img: '/assets/games/Trails 4.webp',
         id: '24',
         players: '1',
         genre: 'Gioco di ruolo',

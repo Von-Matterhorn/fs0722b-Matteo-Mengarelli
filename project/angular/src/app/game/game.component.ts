@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CatalogoService } from '../catalogo.service';
 
 @Component({
   selector: 'app-game',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GameComponent implements OnInit {
 
-  constructor() { }
+  games: any;
+  constructor(public catalogo: CatalogoService) { }
 
-  ngOnInit(): void {
+  ngOnInit(){
+    this.catalogo.getdata().subscribe(res=>{
+      this.games=res;
+    })
   }
 
 }

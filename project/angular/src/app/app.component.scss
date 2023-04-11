@@ -1,7 +1,7 @@
 *{
     font-size: 1vw;
 }
-#logo{
+.logo{
     width: 10vw;
 }
 .nav{
@@ -20,9 +20,28 @@
 }
 .login{
     padding-right: 5vw;
+    color: black;
+    text-decoration: none;
+}
+#footer{
+    background-color: black;
+    padding: 5vw;
+}
+#foot{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5vw;
+}
+.column{
+    width: 25vw;
+}
+#foot div a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5vw;
 }
 @media (max-width: 992px){
-    #logo{
+    .logo{
         width: 25vw;
     }
     .login{
@@ -34,5 +53,8 @@
     }
     .bi-search{
         font-size: 2.5vw;
+    }
+    #foot div a{
+        font-size: 3vw;
     }
 }

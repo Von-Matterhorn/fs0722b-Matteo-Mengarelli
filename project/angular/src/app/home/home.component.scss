@@ -1,9 +1,11 @@
 #welcome{
     font-size: 5vw;
     text-align: center;
+    margin-top: 5vw;
 }
 .carousel{
-    width: 70vw;
+    margin: auto;
+    width: 75vw;
 }
 .filters{
     display: flex;
@@ -25,13 +27,14 @@
 }
 .choice{
     font-size: 2vw;
+    margin-bottom: 5vw;
 }
 #mid{
     margin-top: 3vh;
     text-align: center;
     font-size: 3.5vw;
 }
-@media (max-width: 992px){
+@media (max-width: 768px){
     .genre{
         width: 42.75vw;
     }
@@ -43,8 +46,5 @@
     }
     #welcome{
         font-size: 10vw;
-    }
-    .carousel{
-        width: 100vw;
     }
 }
