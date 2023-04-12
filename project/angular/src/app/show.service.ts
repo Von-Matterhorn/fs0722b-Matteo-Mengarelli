@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class ShowService {
 
-  public selected!: String;
+  public show!: String;
   
   constructor() { }
 }

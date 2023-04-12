@@ -1,7 +1,46 @@
 *{
-    background-color: black;
     margin: 0;
 }
 #back{
     width: 100vw;
+    z-index: -10;
+    position: absolute;
+    top: -5vw;
+}
+#container{
+    background-color: black;
+    margin-top: 25vw;
+}
+.text{
+    color: white;
+    padding-left: 5vw;
+}
+#title, #price{
+    font-size: 3vw;
+}
+#legal, .bottom{
+    text-align: center;
+    font-size: 1.5vw;
+    padding: 0;
+}
+#terms{
+    width: 50vw;
+    margin: auto;
+}
+#info{
+    background-color: #1e1f22;
+    font-size: 1vw;
+    padding: 2vw 4vw;
+
+}
+table{
+    margin: auto;
+    td{
+        vertical-align: top;
+        text-align: start;
+        width: 20vw;
+    }
+}
+.bottom{
+    padding: 2vh 0;
 }

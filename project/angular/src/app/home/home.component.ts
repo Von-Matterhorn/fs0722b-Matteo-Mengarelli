@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { CatalogoService } from '../catalogo.service';
+import { ShowService } from '../show.service';
 
 @Component({
   selector: 'app-home',
@@ -14,7 +15,7 @@ export class HomeComponent implements OnInit {
   x!: number;
   selected!: string;
   games: any;
-  constructor(public catalogo: CatalogoService){}
+  constructor(private catalogo: CatalogoService, private send: ShowService){}
 
   ngOnInit(){
     this.catalogo.getdata().subscribe(res=>{
@@ -44,17 +45,22 @@ export class HomeComponent implements OnInit {
 
   getGame1 = () =>{
     this.selected = this.image[0];
+    this.send.show = this.selected;
   }
   getGame2 = () =>{
     this.selected = this.image[1];
+    this.send.show = this.selected;
   }
   getGame3 = () =>{
     this.selected = this.image[2];
+    this.send.show = this.selected;
   }
   getGame4 = () =>{
     this.selected = this.image[3];
+    this.send.show = this.selected;
   }
   getGame5 = () =>{
     this.selected = this.image[4];
+    this.send.show = this.selected;
   }
 }

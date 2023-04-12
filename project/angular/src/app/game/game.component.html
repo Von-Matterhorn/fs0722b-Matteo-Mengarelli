@@ -1,1 +1,39 @@
-<img id="back" src="/assets/games/Persona 5.webp">
+<img id="back" [src]="choice.img">
+<div id="container">
+    <p class="text" id="title">{{choice.title}} <span class="text"><i class="bi bi-heart"></i>&nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-cart"></i></span></p>
+    <p class="text" id="price">{{choice.price}}</p>
+    <p class="text" id="legal">Informazioni sul gioco</p>
+    <div id="terms">
+        <p class="text" id="info">{{choice.info}}</p>
+    </div>
+    <table>
+        <tr>
+            <td class="text bottom"><i class="bi bi-playstation"></i> Piattaforma:</td>
+            <td class="text bottom">{{choice.platform}}</td>
+        </tr>
+        <tr>
+            <td class="text bottom"><i class="bi bi-dpad-fill"></i> Giocatori:</td>
+            <td class="text bottom">{{choice.players}}</td>
+        </tr>
+        <tr>
+            <td class="text bottom">Uscita:</td>
+            <td class="text bottom">{{choice.release}}</td>
+        </tr>
+        <tr>
+            <td class="text bottom">Editore:</td>
+            <td class="text bottom">{{choice.editor}}</td>
+        </tr>
+        <tr>
+            <td class="text bottom">Genere:</td>
+            <td class="text bottom">{{choice.genre}}</td>
+        </tr>
+        <tr>
+            <td class="text bottom">Voce:</td>
+            <td class="text bottom">{{choice.voices}}</td>
+        </tr>
+        <tr>
+            <td class="text bottom">Lingue schermo:</td>
+            <td class="text bottom">{{choice.languages}}</td>
+        </tr>
+    </table>
+</div>
