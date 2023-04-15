@@ -23,7 +23,7 @@ export class GameComponent implements OnInit {
     languages: '',
     info: '',
   }
-  constructor(private catalogo: CatalogoService, private recive: ShowService) { }
+  constructor(private catalogo: CatalogoService, private recive: ShowService, private control: ShowService) { }
 
   ngOnInit(){
     this.catalogo.getdata().subscribe(res=>{
@@ -33,21 +33,26 @@ export class GameComponent implements OnInit {
   }
 
   showGame =  () =>{
-    for(let i = 0; i < 24; i++){
-      if(this.recive.show == this.games[i].img){
-        this.choice.title = this.games[i].title;
-        this.choice.img = this.games[i].img;
-        this.choice.players = this.games[i].players;
-        this.choice.genre = this.games[i].genre;
-        this.choice.price = this.games[i].price;
-        this.choice.platform = this.games[i].platform;
-        this.choice.release = this.games[i].release;
-        this.choice.editor = this.games[i].editor;
-        this.choice.voices = this.games[i].voices;
-        this.choice.languages = this.games[i].languages;
-        this.choice.info = this.games[i].info;
-        console.log(this.choice)
+    if(this.control.selector == false){
+      for(let i = 0; i < 24; i++){
+        if(this.recive.show == this.games[i].img && this.control.selector == false){
+          this.choice.title = this.games[i].title;
+          this.choice.img = this.games[i].img;
+          this.choice.players = this.games[i].players;
+          this.choice.genre = this.games[i].genre;
+          this.choice.price = this.games[i].price;
+          this.choice.platform = this.games[i].platform;
+          this.choice.release = this.games[i].release;
+          this.choice.editor = this.games[i].editor;
+          this.choice.voices = this.games[i].voices;
+          this.choice.languages = this.games[i].languages;
+          this.choice.info = this.games[i].info;
+          console.log(this.choice)
+        }
       }
+    }else{
+      this.choice = this.recive.show
+      console.log(this.recive.show)
     }
   }
 }

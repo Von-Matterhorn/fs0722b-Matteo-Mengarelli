@@ -2,8 +2,11 @@
   <a routerLink="/"><img src="/assets/logo.png" class="logo"></a>
   <div class="right">
     <a href="_blank" class="login" routerLink="profile">Accedi o Registrati</a>
-    <input type="text" placeholder="Cerca..." id="search">
-    <i class="bi bi-search p-3"></i>
+    <mat-form-field class="example-full-width">
+      <mat-label></mat-label>
+      <input matInput placeholder="Cerca..." (input)="getTitle($event)">
+    </mat-form-field>
+    <a routerLink="../filtered"><i class="bi bi-search p-3"></i></a>
   </div>
 </div>
 <router-outlet></router-outlet>
@@ -13,7 +16,8 @@
     <div class="column">
       <p><a href="https://www.playstation.com/it-it/support/">Supporto</a></p>
       <p><a href="https://www.playstation.com/it-it/legal/privacy-policy/">Privacy e cookie</a></p>
-      <p><a href="https://www.playstation.com/it-it/legal/website-terms-of-use/">Termini di servizio del sito Web</a></p>
+      <p><a href="https://www.playstation.com/it-it/legal/website-terms-of-use/">Termini di servizio del sito Web</a>
+      </p>
       <p><a href="https://www.playstation.com/it-it/site-map/">Mappa del sito</a></p>
       <p><a href="https://www.playstation.com/it-it/corporate/playstation-studios/">PlayStation Studios</a></p>
       <p><a href="https://www.playstation.com/it-it/legal/">Termini legali</a></p>
@@ -21,16 +25,20 @@
     </div>
     <div class="column">
       <p><a href="https://www.playstation.com/it-it/legal/psn-terms-of-service/">Termini di servizio PSN</a></p>
-      <p><a href="https://www.playstation.com/en-gb/legal/software-usage-terms/">Condizioni di utilizzo del software</a></p>
-      <p><a href="https://www.playstation.com/it-it/legal/playstation-store-cancellation-policy/">Politica di annullamento di PS Store</a></p>
+      <p><a href="https://www.playstation.com/en-gb/legal/software-usage-terms/">Condizioni di utilizzo del software</a>
+      </p>
+      <p><a href="https://www.playstation.com/it-it/legal/playstation-store-cancellation-policy/">Politica di
+          annullamento di PS Store</a></p>
       <p><a href="https://www.playstation.com/it-it/legal/health-warning/">Avvertenze per la salute</a></p>
-      <p><a href="https://www.playstation.com/it-it/support/account/age-ratings-playstation/">Informazioni sulle classificazioni</a></p>
+      <p><a href="https://www.playstation.com/it-it/support/account/age-ratings-playstation/">Informazioni sulle
+          classificazioni</a></p>
     </div>
     <div class="column">
       <p><a href="https://www.facebook.com/sonyplaystationitalia">Facebook</a></p>
       <p><a href="https://twitter.com/PlayStationIT">Twitter</a></p>
       <p><a href="https://www.youtube.com/user/playstationplanet">YouTube</a></p>
-      <p><a href="https://play.google.com/store/apps/details?id=com.scee.psxandroid&utm_source=pdcfooter">App Android</a></p>
+      <p><a href="https://play.google.com/store/apps/details?id=com.scee.psxandroid&utm_source=pdcfooter">App
+          Android</a></p>
       <p><a href="https://apps.apple.com/app/apple-store/id410896080?pt=104940801&ct=pdcfooter&mt=8">APP iOS</a></p>
     </div>
   </div>

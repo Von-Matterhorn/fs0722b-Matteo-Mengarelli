@@ -7,6 +7,7 @@ export class ShowService {
 
   public show!: String;
   public filter!: String;
+  public selector: boolean = false;
   
   constructor() { }
 }

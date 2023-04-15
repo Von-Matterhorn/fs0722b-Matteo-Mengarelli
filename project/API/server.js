@@ -3,7 +3,7 @@ const app = express();
 const PORT = 3000;
 let games = [
     {
-        title: 'Persona 5',
+        title: 'Persona 5 Royal',
         img: '/assets/games/Persona 5.webp',
         id: '1',
         players: '1',
@@ -17,7 +17,7 @@ let games = [
         info: "Indossa la maschera. Mostra la tua verità. Preparati per un'esperienza GDR rinnovata su Persona®5 Royal, il più recente episodio della pluripremiata serie Persona®! Vesti la maschera di Joker e unisciti ai Ladri Fantasma di Cuori. Liberati dalle catene della società moderna e organizza colpi dentro le menti dei corrotti per risvegliare il loro cuore!",
     },
     {
-        title: 'Persona 4',
+        title: 'Persona 4 Golden',
         img: '/assets/games/Persona 4.webp',
         id: '2',
         players: '1',
@@ -31,7 +31,7 @@ let games = [
         info: "Dicono che la tua anima gemella apparirà se fissi una televisione accesa in una notte piovosa... Una strana voce si diffonde nella cittadina di campagna di Inaba, nuova casa del protagonista, mentre inizia una serie di misteriosi omicidi. Man mano che il protagonista e i suoi compagni inseguiranno la verità, si ritroveranno ad aprire la porta verso un altro mondo.",
     },
     {
-        title: 'Persona 3',
+        title: 'Persona 3 Portable',
         img: '/assets/games/Persona 3.webp',
         id: '3',
         players: '1',

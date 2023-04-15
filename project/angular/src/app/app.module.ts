@@ -10,6 +10,8 @@ import { ProfileComponent } from './profile/profile.component';
 import { FilteredComponent } from './filtered/filtered.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FormsModule } from '@angular/forms';
+import {MatInputModule} from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -21,10 +23,12 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule,
     HttpClientModule,
     SlickCarouselModule,
-    NgbModule
+    NgbModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -10,11 +10,10 @@ import { CatalogoService } from '../catalogo.service';
 export class FilteredComponent implements OnInit {
 
   games: any;
-  htmlToAdd: any;
-  prova: any = [];
-  img: String = ''
-  lol: String = '/assets/games/ToA.webp'
-  constructor(private catalogo: CatalogoService, private recive: ShowService) { }
+  filtered: any = [];
+  selected: any;
+  result: any;
+  constructor(private catalogo: CatalogoService, private recive: ShowService, private send: ShowService, private control: ShowService) { }
 
   ngOnInit(): void {
     this.catalogo.getdata().subscribe(res=>{
@@ -24,11 +23,18 @@ export class FilteredComponent implements OnInit {
   }
 
   filter = () => {
-    this.htmlToAdd = document.getElementById("result");
+    this.result = this.recive.filter
     for(let i = 0; i < this.games.length; i++){
-      if(this.games[i].genre.includes(this.recive.filter)){
-        this.prova.push(this.games[i])
+      if(this.games[i].genre.includes(this.result) || this.games[i].title.toUpperCase().includes(this.result.toUpperCase())){
+        this.filtered.push(this.games[i])
       }
     }
+  }
+
+  getGame = (x: any) => {
+    console.log(x)
+    this.selected = x;
+    this.send.show = this.selected
+    this.control.selector = true;
   }
 }
