@@ -15,7 +15,7 @@ export class HomeComponent implements OnInit {
   x!: number;
   selected!: string;
   games: any;
-  constructor(private catalogo: CatalogoService, private send: ShowService){}
+  constructor(private catalogo: CatalogoService, private send: ShowService, private genre: ShowService){}
 
   ngOnInit(){
     this.catalogo.getdata().subscribe(res=>{
@@ -47,20 +47,29 @@ export class HomeComponent implements OnInit {
     this.selected = this.image[0];
     this.send.show = this.selected;
   }
+
   getGame2 = () =>{
     this.selected = this.image[1];
     this.send.show = this.selected;
   }
+
   getGame3 = () =>{
     this.selected = this.image[2];
     this.send.show = this.selected;
   }
+
   getGame4 = () =>{
     this.selected = this.image[3];
     this.send.show = this.selected;
   }
+
   getGame5 = () =>{
     this.selected = this.image[4];
     this.send.show = this.selected;
+  }
+
+  getGenre1(){
+    this.selected = 'Gioco di ruolo';
+    this.genre.filter = this.selected;
   }
 }

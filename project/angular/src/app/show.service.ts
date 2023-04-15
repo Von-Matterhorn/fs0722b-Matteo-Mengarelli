@@ -6,6 +6,7 @@ import { Injectable } from '@angular/core';
 export class ShowService {
 
   public show!: String;
+  public filter!: String;
   
   constructor() { }
 }
