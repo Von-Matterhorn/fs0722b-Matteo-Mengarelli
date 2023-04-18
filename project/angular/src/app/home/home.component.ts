@@ -20,6 +20,7 @@ export class HomeComponent implements OnInit {
   ngOnInit(){
     this.catalogo.getdata().subscribe(res=>{
       this.games=res;
+      console.log(this.games)
       this.buildCarousel()
     })
   }

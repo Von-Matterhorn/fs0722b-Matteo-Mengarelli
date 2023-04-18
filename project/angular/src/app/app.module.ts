@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,6 +13,9 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
 import {MatInputModule} from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
+import { LoginComponent } from './profile/login/login.component';
+import { SignupComponent } from './profile/signup/signup.component';
 
 @NgModule({
   declarations: [
@@ -19,14 +23,18 @@ import {MatInputModule} from '@angular/material/input';
     HomeComponent,
     GameComponent,
     ProfileComponent,
-    FilteredComponent
+    FilteredComponent,
+    LoginComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     FormsModule,
     AppRoutingModule,
     HttpClientModule,
     SlickCarouselModule,
+    MatSelectModule,
     NgbModule,
     MatInputModule
   ],

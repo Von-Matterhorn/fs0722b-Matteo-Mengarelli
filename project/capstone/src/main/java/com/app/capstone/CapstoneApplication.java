@@ -1,9 +1,11 @@
-package com.springboot.app;
+package com.app.capstone;
 
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
+@EnableAutoConfiguration
 public class CapstoneApplication {
 
 	public static void main(String[] args) {

@@ -1,7 +1,8 @@
 <div class="nav" *ngIf="logged == false">
   <a routerLink="/"><img src="/assets/logo.png" class="logo"></a>
   <div class="right">
-    <a href="_blank" class="login" routerLink="profile">Accedi o Registrati</a>
+    <a class="login" routerLink="/login">Accedi</a>
+    <a class="login" routerLink="/signup">Registrati</a>
     <mat-form-field class="example-full-width">
       <mat-label></mat-label>
       <input matInput placeholder="Cerca..." (input)="getTitle($event)">
