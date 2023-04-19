@@ -1,27 +1,13 @@
-<mat-form-field appearance="fill">
-    <mat-label>Username</mat-label>
-    <input matInput>
-</mat-form-field>
-<mat-form-field appearance="fill">
-    <mat-label>Mail</mat-label>
-    <input matInput>
-</mat-form-field>
-<mat-form-field appearance="fill">
-    <mat-label>Password</mat-label>
-    <input matInput>
-</mat-form-field>
-<mat-form-field appearance="fill">
-    <mat-label>Seleziona un avatar</mat-label>
-    <mat-select>
-      <mat-option value="aloy">Aloy</mat-option>
-      <mat-option value="astro">Astro</mat-option>
-      <mat-option value="cloud">Cloud Strife</mat-option>
-      <mat-option value="crash">Crash</mat-option>
-      <mat-option value="ellie">Ellie</mat-option>
-      <mat-option value="joker">Joker (Persona 5)</mat-option>
-      <mat-option value="nate">Nathan Drake</mat-option>
-      <mat-option value="ratchet">Ratchet</mat-option>
-      <mat-option value="spider">Spider-Man</mat-option>
-      <mat-option value="spyro">Spyro</mat-option>
-    </mat-select>
-</mat-form-field>
+<form #form="ngForm" (ngSubmit)="onSubmit(form)">
+    <p class="text">Inserisci il tuo username</p> 
+    <mat-form-field appearance="fill">
+        <mat-label>Username</mat-label>
+        <input ngModel matInput type="text" name="username" required>
+    </mat-form-field>
+    <p class="text">Inserisci la tua password</p> 
+    <mat-form-field appearance="fill">
+        <mat-label>Password</mat-label>
+        <input ngModel matInput type="password" name="password" required>
+    </mat-form-field>
+    <button mat-raised-button color="primary" type="submit" [disabled]="!form.valid">Accedi</button>
+</form>

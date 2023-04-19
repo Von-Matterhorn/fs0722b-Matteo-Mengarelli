@@ -1,0 +1,16 @@
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5vw;
+    p{
+        font-size: 1vw;
+    }
+    button{
+        font-size: 1vw;
+        background-color:#003697;
+        color: white;
+        padding: 0.5vw;
+    }
+}

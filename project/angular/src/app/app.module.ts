@@ -12,7 +12,7 @@ import { FilteredComponent } from './filtered/filtered.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
-import {MatInputModule} from '@angular/material/input';
+import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { LoginComponent } from './profile/login/login.component';
 import { SignupComponent } from './profile/signup/signup.component';
