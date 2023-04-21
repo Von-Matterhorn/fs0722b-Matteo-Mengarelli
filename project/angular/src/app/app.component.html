@@ -14,8 +14,8 @@
   <a routerLink="/"><img src="/assets/logo.png" class="logo"></a>
   <p class="user">{{user.username}}</p>
   <div class="right">
-    <a class="login" routerLink="/signup">Preferiti</a>
-    <a class="login" routerLink="/signup">Carrello</a>
+    <a class="login" (click)="getFav()" routerLink="/filtered">Preferiti</a>
+    <a class="login" (click)="getCart()" routerLink="/filtered">Carrello</a>
     <a class="login" routerLink="/signup">Log Out</a>
     <mat-form-field class="example-full-width">
       <mat-label></mat-label>

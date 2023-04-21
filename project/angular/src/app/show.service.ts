@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
 export class ShowService {
 
   public show!: String;
-  public filter!: String;
+  public filter: any = [];
   public selector: boolean = false;
   public fav: any = [];
   public cart: any = [];

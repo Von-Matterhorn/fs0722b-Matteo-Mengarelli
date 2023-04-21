@@ -21,4 +21,15 @@ export class AppComponent {
     this.game.filter = "";
     this.game.filter = (<HTMLInputElement>value.target).value;
   }
+
+  getFav(){
+    for(let i = 0; i < this.game.fav.length; i++){
+      this.game.filter = this.game.fav[i].title;
+    }
+    console.log(this.game.fav)
+  }
+
+  getCart(){
+    this.game.filter = this.game.cart;
+  }
 }

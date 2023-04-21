@@ -11,7 +11,8 @@ import { AuthService } from '../auth.service';
 export class GameComponent implements OnInit {
 
   games: any = []
-  bool: boolean = false;
+  boolfav: boolean = false;
+  boolcart: boolean = false;
   choice: any = {
     title: '',
     img: '',
@@ -38,7 +39,24 @@ export class GameComponent implements OnInit {
   showGame =  () =>{
     if(this.recive.selector == false){
       for(let i = 0; i < this.games.length; i++){
-        if(this.recive.show == this.games[i].img && this.recive.selector == false){
+        if(this.recive.show == this.games[i].img){
+          this.choice.title = this.games[i].title;
+          this.choice.img = this.games[i].img;
+          this.choice.players = this.games[i].players;
+          this.choice.genre = this.games[i].genre;
+          this.choice.price = this.games[i].price;
+          this.choice.platform = this.games[i].platform;
+          this.choice.release = this.games[i].release;
+          this.choice.editor = this.games[i].editor;
+          this.choice.voices = this.games[i].voices;
+          this.choice.languages = this.games[i].languages;
+          this.choice.info = this.games[i].info;
+        }
+      }
+    }else{
+      for(let i = 0; i < this.games.length; i++){
+        console.log(this.recive.show)
+        if(this.recive.show == this.games[i].img){
           this.choice.title = this.games[i].title;
           this.choice.img = this.games[i].img;
           this.choice.players = this.games[i].players;
@@ -59,24 +77,46 @@ export class GameComponent implements OnInit {
     if(this.recive.fav.length > 0){
       for(let x = 0; x < this.recive.fav.length; x++){
         if(this.choice.title == this.recive.fav[x].title){
-          this.bool = true;
+          this.boolfav = true;
         }
       }
     }else{
-      this.bool = false;
+      this.boolfav = false;
+    }
+    if(this.recive.cart.length > 0){
+      for(let x = 0; x < this.recive.cart.length; x++){
+        if(this.choice.title == this.recive.cart[x].title){
+          this.boolcart = true;
+        }
+      }
+    }else{
+      this.boolcart = false;
     }
   }
 
-  addFavourites(){
+  addFav(){
     this.recive.fav.push(this.choice);
-    this.bool = true;
+    this.boolfav = true;
   }
 
-  removeFavourites(){
+  remFav(){
     for(let a = 0; a < this.recive.fav.length; a++){
       if(this.recive.fav[a].title == this.choice.title){
         this.recive.fav.splice(a, 1);
-        this.bool = false;
+        this.boolfav = false;
+      }
+    }
+  }
+  addCart(){
+    this.recive.cart.push(this.choice);
+    this.boolcart = true;
+  }
+
+  remCart(){
+    for(let a = 0; a < this.recive.cart.length; a++){
+      if(this.recive.cart[a].title == this.choice.title){
+        this.recive.cart.splice(a, 1);
+        this.boolcart = false;
       }
     }
   }

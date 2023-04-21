@@ -2,13 +2,13 @@
 <div id="container">
     <p class="text" id="title">{{choice.title}}
         <span class="text">
-            <i (click)="addFavourites()" *ngIf="bool == false" class="bi bi-heart"></i>
-            <i (click)="removeFavourites()" *ngIf="bool == true" class="bi bi-heart-fill"></i>
+            <i (click)="addFav()" *ngIf="boolfav == false" class="bi bi-heart"></i>
+            <i (click)="remFav()" *ngIf="boolfav== true" class="bi bi-heart-fill"></i>
             &nbsp;&nbsp;&nbsp;&nbsp;
-            <i class="bi bi-cart"></i></span>
-            <i class="bi bi-cart-fill"></i>
+            <i (click)="addCart()" *ngIf="boolcart == false"  class="bi bi-cart"></i></span>
+            <i (click)="remCart()" *ngIf="boolcart == true" class="bi bi-cart-fill"></i>
         </p>
-    <p class="text" id="price">{{choice.price}}€</p>
+    <p class="text" id="price">{{choice.price}}</p>
     <p class="text" id="legal">Informazioni sul gioco</p>
     <div id="terms">
         <p class="text" id="info">{{choice.info}}</p>
