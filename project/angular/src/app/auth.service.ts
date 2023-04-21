@@ -9,6 +9,7 @@ export class AuthService {
 
   logged: boolean = false;
   token: String = "";
+  username: String = "";
   url: String = "http://localhost:8080/api/auth/"
 
   constructor(private http: HttpClient) { }

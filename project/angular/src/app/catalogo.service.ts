@@ -9,6 +9,6 @@ export class CatalogoService {
   constructor(private api:HttpClient) { }
 
   getdata(){
-    return this.api.get('http://localhost:8080/store/games');
+    return this.api.get('http://localhost:3000');
   }
 }

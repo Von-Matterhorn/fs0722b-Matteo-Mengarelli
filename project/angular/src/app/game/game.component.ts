@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CatalogoService } from '../catalogo.service';
 import { ShowService } from '../show.service';
+import { AuthService } from '../auth.service';
 
 @Component({
   selector: 'app-game',
@@ -9,7 +10,8 @@ import { ShowService } from '../show.service';
 })
 export class GameComponent implements OnInit {
 
-  games: any;
+  games: any = []
+  bool: boolean = false;
   choice: any = {
     title: '',
     img: '',
@@ -23,19 +25,20 @@ export class GameComponent implements OnInit {
     languages: '',
     info: '',
   }
-  constructor(private catalogo: CatalogoService, private recive: ShowService, private control: ShowService) { }
+  constructor(private catalogo: CatalogoService, public recive: ShowService, public user: AuthService) { }
 
   ngOnInit(){
     this.catalogo.getdata().subscribe(res=>{
       this.games=res;
       this.showGame();
+      this.checks();
     })
   }
 
   showGame =  () =>{
-    if(this.control.selector == false){
-      for(let i = 0; i < 24; i++){
-        if(this.recive.show == this.games[i].img && this.control.selector == false){
+    if(this.recive.selector == false){
+      for(let i = 0; i < this.games.length; i++){
+        if(this.recive.show == this.games[i].img && this.recive.selector == false){
           this.choice.title = this.games[i].title;
           this.choice.img = this.games[i].img;
           this.choice.players = this.games[i].players;
@@ -47,12 +50,34 @@ export class GameComponent implements OnInit {
           this.choice.voices = this.games[i].voices;
           this.choice.languages = this.games[i].languages;
           this.choice.info = this.games[i].info;
-          console.log(this.choice)
+        }
+      }
+    }
+  }
+
+  checks(){
+    if(this.recive.fav.length > 0){
+      for(let x = 0; x < this.recive.fav.length; x++){
+        if(this.choice.title == this.recive.fav[x].title){
+          this.bool = true;
         }
       }
     }else{
-      this.choice = this.recive.show
-      console.log(this.recive.show)
+      this.bool = false;
+    }
+  }
+
+  addFavourites(){
+    this.recive.fav.push(this.choice);
+    this.bool = true;
+  }
+
+  removeFavourites(){
+    for(let a = 0; a < this.recive.fav.length; a++){
+      if(this.recive.fav[a].title == this.choice.title){
+        this.recive.fav.splice(a, 1);
+        this.bool = false;
+      }
     }
   }
 }

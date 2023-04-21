@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { ShowService } from './show.service';
+import { AuthService } from './auth.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -9,13 +11,14 @@ import { ShowService } from './show.service';
 export class AppComponent {
   title = 'project';
   selector: String = '';
-  logged: boolean = false;
-  constructor(private game: ShowService){}
+  constructor(private game: ShowService, public user: AuthService){
+  }
 
   ngOnInit(){
   }
 
   getTitle(value: Event){
+    this.game.filter = "";
     this.game.filter = (<HTMLInputElement>value.target).value;
   }
 }

@@ -20,14 +20,13 @@ export class HomeComponent implements OnInit {
   ngOnInit(){
     this.catalogo.getdata().subscribe(res=>{
       this.games=res;
-      console.log(this.games)
       this.buildCarousel()
     })
   }
 
   buildCarousel =  () =>{
     for (let i = 0; i < 5; i++) {
-      this.x = Math.floor(Math.random() * (24 - 1 + 1) + 1);
+      this.x = Math.floor(Math.random() * (this.games.length - 1 + 1) + 1);
       for(let a = 0; a < this.random.length; a++){
         while(this.x == this.random[a]){
           this.x = Math.floor(Math.random() * (24 - 1 + 1) + 1);
@@ -36,7 +35,7 @@ export class HomeComponent implements OnInit {
       this.random[i] = this.x;
     }
     for(let x = 0; x < this.random.length; x++){
-      for(let y = 0; y < 24; y++){
+      for(let y = 0; y < this.games.length; y++){
         if(this.random[x] == this.games[y].id){
           this.image[x] = this.games[y].img;
         }

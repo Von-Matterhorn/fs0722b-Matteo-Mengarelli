@@ -23,9 +23,9 @@ export class LoginComponent implements OnInit {
       console.log(this.auth.token)
       console.log(this.auth.logged)
       this.router.navigate(["/home"])
-      console.log(data)
+      this. auth.username = data.username;
     },error =>{
-
+      console.log("sei un mongoloide")
     })
   }
 }
