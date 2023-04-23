@@ -23,13 +23,10 @@ export class AppComponent {
   }
 
   getFav(){
-    for(let i = 0; i < this.game.fav.length; i++){
-      this.game.filter = this.game.fav[i].title;
-    }
-    console.log(this.game.fav)
+    this.game.favbool = true;
   }
 
   getCart(){
-    this.game.filter = this.game.cart;
+    this.game.cartbool = true;
   }
 }

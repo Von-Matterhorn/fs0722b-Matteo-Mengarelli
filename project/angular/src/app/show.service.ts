@@ -9,7 +9,9 @@ export class ShowService {
   public filter: any = [];
   public selector: boolean = false;
   public fav: any = [];
+  public favbool: boolean = false;
   public cart: any = [];
+  public cartbool: boolean = false;
   
   constructor() { }
 }

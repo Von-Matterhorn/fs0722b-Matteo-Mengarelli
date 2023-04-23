@@ -1,7 +1,6 @@
 #welcome{
     font-size: 5vw;
     text-align: center;
-    margin-top: 5vw;
 }
 .carousel{
     margin: auto;
@@ -34,7 +33,7 @@
     text-align: center;
     font-size: 3.5vw;
 }
-@media (max-width: 768px){
+@media (max-width: 992px){
     .genre{
         width: 42.75vw;
     }

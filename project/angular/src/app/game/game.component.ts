@@ -95,8 +95,13 @@ export class GameComponent implements OnInit {
   }
 
   addFav(){
+    if(this.user.logged == true){
     this.recive.fav.push(this.choice);
+    console.log(this.recive.fav)
     this.boolfav = true;
+    }else{
+      alert("DEVI AVER EFFETTUATO IL LOG IN PER AGGIUNGERE UN GIOCO AI PREFERITI")
+    }
   }
 
   remFav(){
@@ -106,10 +111,16 @@ export class GameComponent implements OnInit {
         this.boolfav = false;
       }
     }
+    console.log(this.recive.fav)
   }
   addCart(){
+    if(this.user.logged == true){
     this.recive.cart.push(this.choice);
+    console.log(this.recive.cart)
     this.boolcart = true;
+    }else{
+      alert("DEVI AVER EFFETTUATO IL LOG IN PER AGGIUNGERE UN GIOCO AL CARRELLO")
+    }
   }
 
   remCart(){
