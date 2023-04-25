@@ -1,6 +1,6 @@
 <div class="nav" *ngIf="user.logged == false">
   <a routerLink="/"><img src="/assets/logo.png" class="logo"></a>
-  <div class="right">
+  <div class="right"  *ngIf="user.logged == false">
     <a class="login" routerLink="/login">Accedi</a>
     <a class="login" routerLink="/signup">Registrati</a>
     <mat-form-field class="example-full-width">
@@ -12,11 +12,11 @@
 </div>
 <div class="nav" *ngIf="user.logged == true">
   <a routerLink="/"><img src="/assets/logo.png" class="logo"></a>
-  <p class="user">{{user.username}}</p>
+  <p class="user d-none d-lg-block">{{user.username}}</p>
   <div class="right">
     <a class="login" (click)="getFav()" routerLink="/filtered">Preferiti</a>
     <a class="login" (click)="getCart()" routerLink="/filtered">Carrello</a>
-    <a class="login" routerLink="/signup">Log Out</a>
+    <a class="login" (click)="logOut()" routerLink="/login">Log Out</a>
     <mat-form-field class="example-full-width">
       <mat-label></mat-label>
       <input matInput placeholder="Cerca..." (input)="getTitle($event)">

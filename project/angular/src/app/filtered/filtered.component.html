@@ -7,6 +7,8 @@
         </div>
     </div>
 </div>
+<p class="text" style="text-align: center;" *ngIf="emptyfav == true">Il tuo elenco preferiti è vuoto</p>
+<p class="text" style="text-align: center;" *ngIf="emptycart == true">Il tuo carrello è vuoto</p>
 <div id="check">
-    <button class="text" *ngIf="checkout == true" (click)="thanks()" routerLink="/home">Procedi al pagamento</button>
+    <button class="text" *ngIf="checkout == true && emptycart == false" (click)="thanks()" routerLink="/home">Procedi al pagamento</button>
 </div>

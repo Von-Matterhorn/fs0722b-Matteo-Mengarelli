@@ -2,7 +2,7 @@
     margin: 0;
 }
 #back{
-    width: 99vw;
+    width: 100vw;
     z-index: -10;
     position: absolute;
     top: -5vw;
@@ -46,4 +46,18 @@ table{
 }
 .bottom{
     padding: 2vh 0;
+}
+@media (max-width: 992px){
+    table, #terms{
+        width:70vw;
+    }
+    #legal, .bottom{
+        font-size: 3vw;
+    }
+    #info{
+        font-size: 2.5vw;
+    }
+    #title, #price{
+        font-size: 5vw;
+    }
 }

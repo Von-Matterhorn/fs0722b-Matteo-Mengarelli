@@ -29,4 +29,12 @@ export class AppComponent {
   getCart(){
     this.game.cartbool = true;
   }
+
+  logOut(){
+    this.user.username = "";
+    this.user.token = "";
+    this.user.logged = false;
+    this.game.fav = [];
+    this.game.cart = [];
+  }
 }

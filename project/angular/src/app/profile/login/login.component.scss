@@ -4,7 +4,7 @@ form{
     justify-content: center;
     align-items: center;
     margin: 5vw;
-    p{
+    .text{
         font-size: 1vw;
     }
     button{
@@ -12,5 +12,12 @@ form{
         background-color:#003697;
         color: white;
         padding: 0.5vw;
+    }
+}
+@media (max-width: 992px){
+    form{
+        .text, button{
+            font-size: 3vw;
+        }
     }
 }
