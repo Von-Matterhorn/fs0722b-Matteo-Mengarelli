@@ -2,13 +2,13 @@
     font-size: 1vw;
 }
 .logo{
-    width: 10vw;
+    width: 8vw;
 }
 .nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.2vh 2vw;
+    padding: 0 2vw;
     border-bottom: 1.5px solid black;
     position: sticky;
     top: 0;
@@ -28,8 +28,12 @@
     width: 15vw;
 }
 .login{
-    padding-right: 5vw;
-    color: black;
+    margin-right: 5vw;
+    padding: 0.5vw 1vw;
+    color: white;
+    background-color: #003697;
+    border: none;
+    border-radius: 50px;
     text-decoration: none;
 }
 #footer{
@@ -39,7 +43,7 @@
 #foot{
     display: flex;
     justify-content: space-between;
-    margin-top: 5vw;
+    margin-top: 3vh;
 }
 .column{
     width: 25vw;
@@ -47,14 +51,19 @@
 #foot div a{
     text-decoration: none;
     color: white;
-    font-size: 1.5vw;
 }
 @media (max-width: 992px){
+    .nav{
+        padding: 1.5vh 2vw;
+    }
     .logo{
-        width: 15vw;
+        width: 16vw;
+    }
+    input{
+        font-size: 2vw;
     }
     .login{
-        font-size: 3vw;
+        font-size: 2.5vw;
     }
     #search{
         width: 25vw;

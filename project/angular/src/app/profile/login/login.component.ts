@@ -25,7 +25,7 @@ export class LoginComponent implements OnInit {
       this.router.navigate(["/home"])
       this. auth.username = data.username;
     },error =>{
-      console.log("sei un mongoloide")
+      console.log("username o password errata")
     })
   }
 }
